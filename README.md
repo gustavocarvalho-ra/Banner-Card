@@ -1,0 +1,1 @@
+    Neste repositório crio um pequeno projeto de card animado de um jogo.

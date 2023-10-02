@@ -1,0 +1,70 @@
+body{
+  margin: 150px;
+  height: 90vh;
+  /* display: grid;
+  place-items: center; */
+  background-color: #191622;
+  columns: 4;
+  column-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+}
+
+.card{
+  width: 30vw;
+  position: relative;
+  /* display: flex; Ativa o flexbox no container */
+}
+
+.div{
+  display: inline;
+  margin: left 50px;
+}
+
+.title{
+  inset: 0;
+  position: absolute;
+}
+
+.inner img{
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  border-radius: 8px;
+  grid-template-columns: minmax(100px);
+}
+
+.card:hover .inner{
+  transform: 
+    perspective(900px) 
+    translate(-5%)
+    rotateX(25deg) 
+    translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  filter: blur(0.8px);
+}
+
+.title{
+  transform: translate3d(0%, 70%, 0);
+}
+
+.card:hover .title{
+  transform: translate3d(0%, 30%, 0);
+}
+
+.inner{
+  transition: all 0.5s cubic-bezier(0.2,-0.04, 0.45, 0.94);
+}
+
+.title{
+  transition: all 0.5s cubic-bezier(0.2,-0.04, 0.45, 0.94)
+}
+
+.card {
+  margin-left: 130px;
+  box-sizing: border-box;
+  width: 350px;
+}
